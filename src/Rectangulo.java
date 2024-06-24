@@ -3,13 +3,11 @@ public class Rectangulo implements FiguraGeometrica{
 	private String nombre;
 	private double base;
 	private double altura;
-	private double lado;
-	public Rectangulo(String nombre, double base, double altura, double lado) {
+	public Rectangulo(String nombre, double base, double altura) {
 		super();
 		this.nombre = nombre;
 		this.base = base;
 		this.altura = altura;
-		this.lado = lado;
 	}
 	public String getNombre() {
 		return nombre;
@@ -29,16 +27,11 @@ public class Rectangulo implements FiguraGeometrica{
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
-	public double getLado() {
-		return lado;
-	}
-	public void setLado(double lado) {
-		this.lado = lado;
-	}
+	
 	
 	@Override
 	public String toString() {
-		return "Rectangulo [nombre=" + nombre + ", base=" + base + ", altura=" + altura + ", lado=" + lado + "]";
+		return "Rectangulo [nombre=" + nombre + ", base=" + base + ", altura=" + altura +  "]";
 	}
 	@Override
 	public double calcularArea() {
